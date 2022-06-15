@@ -3,3 +3,150 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.container{
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+
+
+.container-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: lightskyblue;
+    height: 50px;
+    
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.big-box{
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 20px;
+    width: 35%;
+    background-color: aqua;
+}
+
+.box{
+    width: 35%;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: aqua;
+
+}
+
+.violet{
+    background-color: violet;
+}
+
+.box-white{
+    width: 35%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: white;
+
+
+}
+
+.box-violet{
+    width: 35%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: violet;
+}
+
+.stretch{
+    width: 50%;
+   
+}
+
+.stretch p{
+    margin-top: 10px;
+}
+
+footer{
+    color: white;
+    background-color: black;
+}
+
+/* MEDIA QUERY*/
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
+    .container{
+        max-width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .big-box{
+       
+        width: 60%;
+    }
+
+    .box{
+        margin: 10px;
+        width: 30%;
+        
+    }
+
+    .box-violet{
+        width: 100%;
+    }
+
+    .box-white{
+        margin: 10px;
+        width: 40%;
+    }
+
+    .block{
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+    .container{
+        max-width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .big-box{
+       
+        width: 60%;
+    }
+
+    .box{
+        margin: 10px;
+        width: 30%;
+        
+    }
+
+    .box-violet{
+        width: 100%;
+    }
+
+    .box-white{
+        margin: 10px;
+        width: 40%;
+    }
+
+    .block{
+        width: 100%;
+    }
+
+}
