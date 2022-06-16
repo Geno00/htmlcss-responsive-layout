@@ -4,22 +4,71 @@
     box-sizing: border-box;
 }
 
+html{
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
 .container{
     max-width: 600px;
     margin: auto;
     text-align: center;
+    
+}
+
+.text-white{
+    color: white;
+}
+
+.text-violet{
+    color: rgb(181, 132, 255);
 }
 
 
 
 .container-header{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    background-color: lightskyblue;
+    background-color: rgb(25, 118, 210);
     height: 50px;
     
 }
+
+.logo{
+    padding: 30px;
+    
+}
+
+.container-header i{
+    font-size: 30px;
+    padding: 30px;
+}
+
+.navigation{
+    display: none;
+}
+
+.navigation ul{
+    display: flex;
+    list-style: none;
+}
+
+
+.navigation a{
+    padding: 20px;
+    text-decoration: none;
+}
+
+.navigation button{
+    border-radius: 15px;
+    padding: 2px;
+    border-color: white;
+    background-color: white;
+    margin-right: 30px;
+    
+}
+
 
 .flex{
     display: flex;
@@ -31,10 +80,34 @@
 .big-box{
     text-align: center;
     margin-top: 30px;
-    padding: 10px;
+    padding: 20px;
     border-radius: 20px;
     width: 35%;
-    background-color: aqua;
+    background-color: lightskyblue;
+}
+
+.btn{
+    border-radius: 15px;
+    padding: 8px;
+    border-color: transparent;
+}
+
+.big-box button{
+    background-color:rgb(25, 118, 210);
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.big-box h3{
+    color:rgb(25, 118, 210);
+    margin-bottom: 10px;
+}
+
+.phone{
+    width: 70%;
+    margin-bottom: -25px;
+   
 }
 
 .box{
@@ -42,12 +115,27 @@
     margin-top: 20px;
     padding: 10px;
     border-radius: 20px;
-    background-color: aqua;
+    background-color: lightskyblue;
 
 }
 
+.box i{
+    margin-bottom: 10px;
+    font-size: 50px;
+    color: rgb(25, 118, 210);
+}
+
+.box h3{
+    margin-bottom: 10px;
+    color: rgb(25, 118, 210);
+}
+
 .violet{
-    background-color: violet;
+   background-color: rgb(181, 132, 255);
+}
+
+.image-planning{
+    width: 50%;
 }
 
 .box-white{
@@ -58,8 +146,21 @@
     border-radius: 20px;
     background-color: white;
 
-
 }
+
+.box-white img{
+    width: 60%;
+}
+
+.box-white h1{
+    font-size: 50px;
+}
+
+.text{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 
 .box-violet{
     width: 35%;
@@ -67,7 +168,17 @@
     margin-bottom: 20px;
     padding: 10px;
     border-radius: 20px;
-    background-color: violet;
+    background-color: rgb(169, 112, 255);
+}
+
+.testimonial{
+    width: 50%;
+    border-radius: 50%;
+}
+
+.linkedin button{
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 .stretch{
@@ -75,8 +186,34 @@
    
 }
 
+.block{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .stretch p{
     margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.stretch h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.stretch h1{
+    font-size: 50px;
+    color: yellow;
+}
+
+.big-buttom{
+    border-radius: 20px;
+    padding: 20px;
+    background-color: white;
+    border-color: transparent;
+    font-size: 20px;
+    margin-bottom: 20px;
 }
 
 footer{
@@ -94,8 +231,14 @@ footer{
     }
 
     .big-box{
-       
+       display: flex;
         width: 60%;
+    }
+
+    .phone{
+        width: 100%;
+        margin-bottom: ;
+
     }
 
     .box{
@@ -104,14 +247,23 @@ footer{
         
     }
 
+
     .box-violet{
         width: 100%;
+        display: flex;
+        align-items: center;
     }
 
     .box-white{
         margin: 10px;
         width: 40%;
     }
+
+
+    .box-white img{
+        width: 50%;
+    }
+
 
     .block{
         width: 100%;
@@ -120,14 +272,29 @@ footer{
 }
 
 @media screen and (min-width: 769px) and (max-width: 1200px) {
+
+    .navigation{
+        display: block;
+    }
+
+    .container-header i{
+        display: none;
+    }
+
     .container{
         max-width: 100%;
         flex-direction: row;
         flex-wrap: wrap;
     }
     .big-box{
-       
-        width: 60%;
+        display: flex;
+        width: 66%;
+    }
+
+    .phone{
+        width: 100%;
+        margin-bottom: ;
+
     }
 
     .box{
@@ -138,12 +305,19 @@ footer{
 
     .box-violet{
         width: 100%;
+        display: flex;
+        align-items: center;
     }
 
     .box-white{
         margin: 10px;
         width: 40%;
     }
+
+    .box-white button{
+        margin-top: 10px;
+    }
+
 
     .block{
         width: 100%;
